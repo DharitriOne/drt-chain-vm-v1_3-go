@@ -310,7 +310,7 @@ func DefaultTestVMWithWorldMock(tb testing.TB) (vmhost.VMHost, *worldmock.MockWo
 		BlockGasLimit:        uint64(1000),
 		GasSchedule:          gasSchedule,
 		BuiltInFuncContainer: world.BuiltinFuncs.Container,
-		ProtectedKeyPrefix:   []byte("E" + "L" + "R" + "O" + "N" + "D"),
+		ProtectedKeyPrefix:   []byte("N" + "U" + "M" + "B" + "A" + "T"),
 		UseWarmInstance:      false,
 		EnableEpochsHandler: &mock.EnableEpochsHandlerStub{
 			IsFlagEnabledCalled: func(flag core.EnableEpochFlag) bool {
@@ -336,7 +336,7 @@ func DefaultTestVM(tb testing.TB, blockchain vmcommon.BlockchainHook) vmhost.VMH
 		BlockGasLimit:        uint64(1000),
 		GasSchedule:          gasSchedule,
 		BuiltInFuncContainer: builtInFunctions.NewBuiltInFunctionContainer(),
-		ProtectedKeyPrefix:   []byte("E" + "L" + "R" + "O" + "N" + "D"),
+		ProtectedKeyPrefix:   []byte("N" + "U" + "M" + "B" + "A" + "T"),
 		UseWarmInstance:      false,
 		EnableEpochsHandler: &mock.EnableEpochsHandlerStub{
 			IsFlagEnabledCalled: func(flag core.EnableEpochFlag) bool {
@@ -366,7 +366,7 @@ func DefaultTestVMWithGasSchedule(
 		BlockGasLimit:            uint64(1000),
 		GasSchedule:              gasSchedule,
 		BuiltInFuncContainer:     builtInFunctions.NewBuiltInFunctionContainer(),
-		ProtectedKeyPrefix:       []byte("E" + "L" + "R" + "O" + "N" + "D"),
+		ProtectedKeyPrefix:       []byte("N" + "U" + "M" + "B" + "A" + "T"),
 		EnableEpochsHandler:      &mock.EnableEpochsHandlerStub{},
 		WasmerSIGSEGVPassthrough: wasmerSIGSEGVPassthrough,
 	})

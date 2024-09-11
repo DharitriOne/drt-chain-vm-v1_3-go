@@ -97,7 +97,7 @@ func deploy(tb testing.TB, totalTokenSupply *big.Int) (vmhost.VMHost, *worldmock
 		BlockGasLimit:        uint64(1000),
 		GasSchedule:          gasMap,
 		BuiltInFuncContainer: builtInFunctions.NewBuiltInFunctionContainer(),
-		ProtectedKeyPrefix:   []byte("E" + "L" + "R" + "O" + "N" + "D"),
+		ProtectedKeyPrefix:   []byte("N" + "U" + "M" + "B" + "A" + "T"),
 		EnableEpochsHandler: &mock.EnableEpochsHandlerStub{
 			IsFlagEnabledCalled: func(flag core.EnableEpochFlag) bool {
 				return flag == hostCore.SCDeployFlag || flag == hostCore.AheadOfTimeGasUsageFlag || flag == hostCore.RepairCallbackFlag || flag == hostCore.BuiltInFunctionsFlag
